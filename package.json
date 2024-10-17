@@ -1,6 +1,6 @@
 {
   "name": "@emuanalytics/typedoc-plugin-no-inherit",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Typedoc plugin to exclude inherited members from a Typedoc class/interface",
   "main": "dist/index.js",
   "license": "MIT",

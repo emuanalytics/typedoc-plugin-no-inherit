@@ -3,7 +3,7 @@
   "tagDefinitions": [
     {
       "tagName": "@noInheritDoc",
-      "syntaxKind": "block"
+      "syntaxKind": "modifier"
     }
   ]
 }
