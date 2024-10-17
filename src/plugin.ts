@@ -1,9 +1,5 @@
 import {
-  Application, Logger,
-  Reflection, ReflectionKind, DeclarationReflection,
-  Converter,
-  Context,
-  Type, ReferenceType
+  Application, Context, Converter, Logger
 } from 'typedoc';
 
 /**
@@ -16,23 +12,9 @@ export class NoInheritPlugin {
   private logger: Logger;
 
   /**
-   * A list of classes/interfaces that don't inherit reflections.
-   */
-  private noInherit: DeclarationReflection[];
-
-  /**
-   * A list of reflections that are inherited from a super.
-   */
-  private inheritedReflections: DeclarationReflection[];
-
-  /**
    * Create a new NoInheritPlugin instance.
    */
   initialize(app: Application) {
-    // Add the @noInheritDoc tag to the list of modifier tags
-    const modifiers =  app.options.getValue('modifierTags');
-    app.options.setValue('modifierTags', modifiers.concat(['@noInheritDoc']));
-
     app.converter.on(Converter.EVENT_RESOLVE_END, this.onEndResolve.bind(this));
     this.logger = app.logger;
   }
