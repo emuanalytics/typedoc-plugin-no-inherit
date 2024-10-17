@@ -1,20 +1,19 @@
 {
-  "name": "typedoc-plugin-no-inherit",
+  "name": "@emuanalytics/typedoc-plugin-no-inherit",
   "version": "1.4.0",
   "description": "Typedoc plugin to exclude inherited members from a Typedoc class/interface",
   "main": "dist/index.js",
   "license": "MIT",
-  "homepage": "https://github.com/jonchardy/typedoc-plugin-no-inherit#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonchardy/typedoc-plugin-no-inherit.git"
+    "url": "git+https://github.com/emuanalytics/typedoc-plugin-no-inherit.git"
   },
   "bugs": {
-    "url": "https://github.com/jonchardy/typedoc-plugin-no-inherit/issues"
+    "url": "https://github.com/emuanalytics/typedoc-plugin-no-inherit/issues"
   },
-  "author": "Jon Hardy",
+  "author": "Robin Summerhill",
   "peerDependencies": {
-    "typedoc": ">=0.23.0"
+    "typedoc": ">=0.26.8"
   },
   "devDependencies": {
     "@types/jest": "^28.1.8",
